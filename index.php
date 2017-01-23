@@ -172,7 +172,6 @@ class Cart
         $new = $New->cartInput();
         $sku = $new['sku'];
         $cartCount = $inputCart->countCart($sku);
-        var_dump($cartCount);
         $cart = $inputCart->cart;
         $inventory = $inputInventory->inventory;
         $movedItems = 0;
