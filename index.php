@@ -218,7 +218,6 @@ class Checkout
             echo "Total is = " . $total . PHP_EOL;
         }
         $total = 0;
-        unset($inputCart->cart);
         $inputCart->cart = [];
         return $total;
     }
