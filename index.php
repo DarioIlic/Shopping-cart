@@ -172,7 +172,6 @@ class Cart
         $new = $New->cartInput();
         $sku = $new['sku'];
         $cartCount = $inputCart->countCart($sku);
-        var_dump($cartCount);
         $cart = $inputCart->cart;
         $inventory = $inputInventory->inventory;
         $movedItems = 0;
@@ -218,7 +217,6 @@ class Checkout
             echo "Total is = " . $total . PHP_EOL;
         }
         $total = 0;
-        unset($inputCart->cart);
         $inputCart->cart = [];
         return $total;
     }
@@ -275,3 +273,6 @@ do {
             echo "Unknown command" . PHP_EOL;
     }
 } while ($Command !== 'end');
+
+
+// Code for review
